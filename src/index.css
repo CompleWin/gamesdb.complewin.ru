@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+:root {
+  --brand-50:  #EEF0FE;
+  --brand-100: #DDE1FD;
+  --brand-300: #97A2F4;
+  --brand-600: #2438E5;
+  --brand-700: #1B2FE0;
+  --brand-800: #1728BE;
+  --brand-900: #13219D;
+
+  --neutral-50:  #FAFAF9;
+  --neutral-100: #F3F2F2;
+  --neutral-200: #EAE9E9;
+  --neutral-300: #DCDBDA;
+  --neutral-400: #B3B1AF;
+  --neutral-500: #8A8785;
+  --neutral-600: #66635F;
+  --neutral-700: #4A4744;
+  --neutral-800: #302E2C;
+  --neutral-900: #201E1D;
+
+  --red-50:  #FDEEEC;
+  --red-100: #FBD9D6;
+  --red-300: #F09E96;
+  --red-600: #E32213;
+  --red-700: #C21B0F;
+
+  --green-50:  #EAF7EF;
+  --green-100: #D3EEDD;
+  --green-300: #86D3A5;
+  --green-600: #0C9245;
+  --green-700: #0A7A39;
+}
+
+@theme {
+  --font-primary: 'Golos Text', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-code: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --radius-island: 22px;
+  --radius-panel: 18px;
+  --radius-field: 14px;
+
+  --color-*: initial;
+
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+
+  --color-primary: var(--brand-700);
+  --color-primary-hover: var(--brand-800);
+  --color-primary-soft: var(--brand-50);
+  --color-primary-soft-hover: var(--brand-100);
+  --color-primary-faint: var(--brand-300);
+  --color-primary-ink: var(--brand-900);
+
+  --color-danger: var(--red-600);
+  --color-danger-hover: var(--red-700);
+  --color-danger-soft: var(--red-50);
+  --color-danger-soft-hover: var(--red-100);
+  --color-danger-faint: var(--red-300);
+  --color-danger-ink: var(--red-700);
+
+  --color-success: var(--green-600);
+  --color-success-hover: var(--green-700);
+  --color-success-soft: var(--green-50);
+  --color-success-soft-hover: var(--green-100);
+  --color-success-faint: var(--green-300);
+
+  --color-neutral: var(--neutral-600);
+  --color-neutral-hover: var(--neutral-700);
+  --color-neutral-soft: var(--neutral-100);
+  --color-neutral-soft-hover: var(--neutral-300);
+
+  --color-surface-page: var(--neutral-100);
+  --color-surface-island: var(--color-white);
+  --color-surface-muted: var(--neutral-50);
+  --color-surface-active: var(--neutral-200);
+  --color-surface-strong: var(--neutral-300);
+  --color-surface-inverse: var(--neutral-900);
+
+  --color-fg: var(--neutral-900);
+  --color-fg-muted: var(--neutral-700);
+  --color-fg-subtle: var(--neutral-600);
+  --color-fg-faint: var(--neutral-500);
+  --color-fg-disabled: var(--neutral-400);
+  --color-fg-inverse: var(--neutral-100);
+
+  --color-overlay: color-mix(in srgb, var(--neutral-900) 42%, transparent);
+  --shadow-modal: 0 24px 60px color-mix(in srgb, var(--neutral-900) 22%, transparent);
+  --shadow-popover: 0 14px 34px color-mix(in srgb, var(--neutral-900) 16%, transparent);
+
+  --color-line: color-mix(in srgb, var(--neutral-900) 22%, transparent);
+  --color-line-strong: color-mix(in srgb, var(--neutral-900) 28%, transparent);
+  --color-line-heavy: var(--neutral-900);
+}
+
+body {
+  background-color: var(--color-surface-page);
+  color: var(--color-fg);
+  font-family: var(--font-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, p {
+  text-wrap: pretty;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
